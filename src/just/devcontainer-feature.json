@@ -1,0 +1,24 @@
+{
+  "id": "just",
+  "version": "0.1.0",
+  "name": "just",
+  "description": "Installs just, a command runner for project-specific tasks.",
+  "documentationURL": "https://github.com/thatgoofydev/devcontainer-features/tree/main/src/just",
+  "licenseURL": "https://github.com/thatgoofydev/devcontainer-features/blob/main/LICENSE",
+  "keywords": [
+    "just",
+    "justfile",
+    "task-runner"
+  ],
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "proposals": [
+        "latest",
+        "1.57.0"
+      ],
+      "description": "Version of just to install, or latest."
+    }
+  }
+}

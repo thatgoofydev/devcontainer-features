@@ -1,0 +1,11 @@
+{
+  "install_chromium": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {
+      "playwright-cli": {
+        "browsers": " chromium, chromium "
+      }
+    },
+    "remoteUser": "vscode"
+  }
+}

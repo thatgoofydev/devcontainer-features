@@ -1,0 +1,42 @@
+{
+  "id": "playwright-cli",
+  "version": "0.1.0",
+  "name": "Playwright CLI",
+  "description": "Installs Playwright CLI for coding agents, with optional browser installation.",
+  "documentationURL": "https://github.com/thatgoofydev/devcontainer-features/tree/main/src/playwright-cli",
+  "licenseURL": "https://github.com/thatgoofydev/devcontainer-features/blob/main/LICENSE",
+  "keywords": [
+    "browser",
+    "playwright",
+    "testing"
+  ],
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "proposals": [
+        "latest"
+      ],
+      "description": "Version of @playwright/cli to install, or latest."
+    },
+    "browsers": {
+      "type": "string",
+      "default": "",
+      "proposals": [
+        "chromium",
+        "firefox",
+        "webkit",
+        "chromium,firefox,webkit"
+      ],
+      "description": "Optional comma-separated browsers to install. Supported values: chromium, firefox, webkit, chrome, chrome-beta, msedge, msedge-beta."
+    }
+  },
+  "containerEnv": {
+    "PLAYWRIGHT_BROWSERS_PATH": "/ms-playwright"
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": false
+    }
+  }
+}

@@ -1,0 +1,4 @@
+node_modules/
+.devcontainer-lock.json
+.DS_Store
+*.tgz

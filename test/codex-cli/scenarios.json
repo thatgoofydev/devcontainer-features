@@ -1,0 +1,18 @@
+{
+  "automatic_updates_enabled": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {
+      "codex-cli": {}
+    },
+    "remoteUser": "vscode"
+  },
+  "automatic_updates_disabled": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {
+      "codex-cli": {
+        "autoUpdate": false
+      }
+    },
+    "remoteUser": "vscode"
+  }
+}

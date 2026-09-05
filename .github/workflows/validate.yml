@@ -1,0 +1,45 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate Feature metadata
+        uses: devcontainers/action@v1
+        with:
+          validate-only: true
+          base-path-to-features: ./src
+      - name: Check shell syntax
+        run: |
+          find src -type f -name '*.sh' -print0 | xargs -0 -n1 sh -n
+          find test -type f -name '*.sh' -print0 | xargs -0 -n1 bash -n
+      - name: Check changelog versions
+        run: |
+          for feature in src/*; do
+            version=$(jq -r .version "$feature/devcontainer-feature.json")
+            grep -F "## [$version]" "$feature/CHANGELOG.md" >/dev/null
+          done
+      - name: Check README Feature table
+        run: scripts/check-feature-table.sh
+
+  validate-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate repository skills
+        run: scripts/validate-skills.sh

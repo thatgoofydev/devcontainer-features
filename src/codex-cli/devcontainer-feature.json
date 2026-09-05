@@ -1,0 +1,29 @@
+{
+  "id": "codex-cli",
+  "version": "0.1.0",
+  "name": "OpenAI Codex CLI",
+  "description": "Installs OpenAI Codex CLI with optional automatic updates when the container starts.",
+  "documentationURL": "https://github.com/thatgoofydev/devcontainer-features/tree/main/src/codex-cli",
+  "licenseURL": "https://github.com/thatgoofydev/devcontainer-features/blob/main/LICENSE",
+  "keywords": [
+    "ai",
+    "codex",
+    "openai"
+  ],
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "proposals": [
+        "latest"
+      ],
+      "description": "Codex CLI version to install, or latest."
+    },
+    "autoUpdate": {
+      "type": "boolean",
+      "default": true,
+      "description": "Re-run the official installer at container start. Exact versions remain pinned; latest tracks the newest release."
+    }
+  },
+  "postStartCommand": "/usr/local/bin/codex-feature-update"
+}
