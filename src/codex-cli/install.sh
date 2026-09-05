@@ -72,6 +72,8 @@ if [ -z "$runtime_user" ] || ! id "$runtime_user" >/dev/null 2>&1; then
 fi
 runtime_group="$(id -gn "$runtime_user")"
 chown -R "$runtime_user:$runtime_group" "$INSTALL_ROOT"
+# The lifecycle updater may run as a different user than the build-time user.
+chmod -R a+rwX "$INSTALL_STATE"
 
 ln -sf "$INSTALL_BIN/codex" /usr/local/bin/codex
 if [ -e "$INSTALL_BIN/codex-code-mode-host" ]; then

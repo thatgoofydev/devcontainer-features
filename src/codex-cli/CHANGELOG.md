@@ -2,6 +2,13 @@
 
 All notable changes to this Feature are documented in this file.
 
+## [0.1.1] - 2026-09-05
+
+### Fixed
+
+- Ensure the automatic updater can write its shared package state when the
+  container runtime user differs from the build-time user.
+
 ## [0.1.0] - 2026-09-05
 
 ### Added

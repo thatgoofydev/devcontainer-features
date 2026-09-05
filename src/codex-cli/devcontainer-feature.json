@@ -1,6 +1,6 @@
 {
   "id": "codex-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "OpenAI Codex CLI",
   "description": "Installs OpenAI Codex CLI with optional automatic updates when the container starts.",
   "documentationURL": "https://github.com/thatgoofydev/devcontainer-features/tree/main/src/codex-cli",

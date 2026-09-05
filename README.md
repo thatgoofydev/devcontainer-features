@@ -9,7 +9,7 @@ Dev Container Features published by [thatgoofydev](https://github.com/thatgoofyd
 <!-- feature-table:start -->
 | Feature | Description | Version |
 | --- | --- | --- |
-| [`codex-cli`](src/codex-cli) | Installs OpenAI Codex CLI with optional automatic updates when the container starts. | `0.1.0` |
+| [`codex-cli`](src/codex-cli) | Installs OpenAI Codex CLI with optional automatic updates when the container starts. | `0.1.1` |
 | [`just`](src/just) | Installs just, a command runner for project-specific tasks. | `0.1.0` |
 | [`playwright-cli`](src/playwright-cli) | Installs Playwright CLI for coding agents, with optional browser installation. | `0.1.0` |
 <!-- feature-table:end -->
