@@ -1,0 +1,24 @@
+{
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "version": "1.10.0",
+      "resolved": "ghcr.io/devcontainers/features/docker-outside-of-docker@sha256:c2c2cf829505ead8e4892c88c31b6594ae94a2bbb209e16e1fac456c1a3a624e",
+      "integrity": "sha256:c2c2cf829505ead8e4892c88c31b6594ae94a2bbb209e16e1fac456c1a3a624e"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "1.7.1",
+      "resolved": "ghcr.io/devcontainers/features/node@sha256:8c0de46939b61958041700ee89e3493f3b2e4131a06dc46b4d9423427d06e5f6",
+      "integrity": "sha256:8c0de46939b61958041700ee89e3493f3b2e4131a06dc46b4d9423427d06e5f6"
+    },
+    "ghcr.io/thatgoofydev/devcontainer-features/codex-cli:0.1.1": {
+      "version": "0.1.1",
+      "resolved": "ghcr.io/thatgoofydev/devcontainer-features/codex-cli@sha256:54184ad475c01857ea481c5bbcf75def1a14c79f7c72c01d4f95a7c18dd8b144",
+      "integrity": "sha256:54184ad475c01857ea481c5bbcf75def1a14c79f7c72c01d4f95a7c18dd8b144"
+    },
+    "ghcr.io/thatgoofydev/devcontainer-features/just:0.1.0": {
+      "version": "0.1.0",
+      "resolved": "ghcr.io/thatgoofydev/devcontainer-features/just@sha256:966f6ab80441f87bbfea9d51649a03cf4da5c8ee3d914c894e8493f97b513621",
+      "integrity": "sha256:966f6ab80441f87bbfea9d51649a03cf4da5c8ee3d914c894e8493f97b513621"
+    }
+  }
+}
